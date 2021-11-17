@@ -5,39 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+
+      <style>
+          #form-data{
+              margin-right:50%;
+              margin-left:50%;
+          }
+      </style>
   </head>
   <body>
-    <h1 id="title">Microverse Trials with Justin and Alexander</h1>
-    <p id="description">
-      This is Alex and Justin's survey website. Please fill in this survey below
-    </p>
-    <form id="survey-form">
-      <label for="name" id="name-label">Name</label>
-      <input id="name" type="text" placeholder="Name" required /><br />
-      <label for="email" id="email-label", >Email</label>
-      
-      <input id="email" type="email" placeholder="Email" required /><br />
-      <label for="number" id="number-label", >Number</label>
-      <input
-        id="number"
-        value="0"
-        type="number"
-        min="0"
-        max="100"
-        placeholder="Number"
-        required
-      /><br />
-      <label for="continents" id="dropdown-label">Select your continent:</label>
-      <select name="continents" id="dropdown" required>
-        <option value="Africa">Africa</option>
-        <option value="North America">North America</option>
-        <option value="South America">South America</option>
-        <option value="Europe">Europe</option>
-        <option value="Asia">Asia</option>
-        <option value="Australia">Australia</option>
-        <option value="Antarctica">Antarctica</option>
-      </select> 
-      <input id="submit" type="submit" value="Submit" />
-    </form>
+      <div id="form-data">
+          <h1 id="title">Microverse Trials with Justin and Alexander</h1>
+          <p id="description">
+              This is Alex and Justin's survey website. Please fill in this survey below
+          </p>
+          <form id="survey-form">
+              <label for="name" id="name-label">Name</label>
+              <input id="name" type="text" placeholder="Name" required /><br />
+              <label for="email" id="email-label" ,>Email</label>
+
+              <input id="email" type="email" placeholder="Email" required /><br />
+              <label for="number" id="number-label" ,>Number</label>
+              <input id="number"
+                     value="0"
+                     type="number"
+                     min="0"
+                     max="100"
+                     placeholder="Number"
+                     required /><br />
+              <label for="continents" id="dropdown-label">Select your continent:</label>
+              <select name="continents" id="dropdown" required>
+                  <option value="Africa">Africa</option>
+                  <option value="North America">North America</option>
+                  <option value="South America">South America</option>
+                  <option value="Europe">Europe</option>
+                  <option value="Asia">Asia</option>
+                  <option value="Australia">Australia</option>
+                  <option value="Antarctica">Antarctica</option>
+              </select>
+
+              <p>Select your favourite code editor:</p>
+              <input type="radio" id="emacs" name="fav_language" value="Emacs">
+              <label for="html">Emacs</label><br>
+
+              <input type="radio" id="vim" name="fav_language" value="Vim">
+              <label for="html">Vim</label><br>
+
+              <input type="radio" id="atom" name="fav_language" value="Atom">
+              <label for="html">Atom</label><br>
+
+              <input type="radio" id="vscode" name="fav_language" value="VSCode">
+              <label for="html">VSCode</label><br>
+
+              <input type="radio" id="sublime text" name="fav_language" value="sublime text">
+              <label for="html">Sublime</label><br>
+
+              <!--Second Selection radio button-->
+              <p>Select your favourite genere of music:</p>
+              <input type="checkbox" id="rock" name="fav_language" value="Rock">
+              <label for="html">Rock</label><br>
+
+              <input type="checkbox" id="hip-hop" name="fav_language" value="hip-hop">
+              <label for="html">Hip-Hop</label><br>
+
+              <input type="checkbox" id="electronic" name="fav_language" value="electronic">
+              <label for="html">Electronic</label><br>
+
+              <input type="checkbox" id="classical" name="fav_language" value="classical">
+              <label for="html">Classical</label><br>
+
+              <input type="checkbox" id="pop" name="fav_language" value="pop">
+              <label for="html">Pop</label><br><br />
+
+              <textarea id="textarea" type="text" placeholder="Comments"></textarea><br /><br />
+
+              <input id="submit" type="submit" value="Submit" />
+          </form>
+      </div>
+ 
   </body>
 </html>
