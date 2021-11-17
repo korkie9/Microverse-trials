@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
     <link rel="stylesheet" href="styles.css" />
-  </head>
+    <script type="text/javascript" src="script.js"></script>
+
+</head>
   <body>
     <div id="form-data" class="main-container">
       <h1 id="title">Microverse Trials with Justin and Alexander</h1>
@@ -15,12 +17,12 @@
         This is Alex and Justin's survey website. Please fill in this survey
         below
       </p>
-      <form id="survey-form" class="form">
+      <form onsubmit ="return OnSubmit();" id="survey-form" class="form">
         <label for="name" id="name-label" class="label-input">Name</label>
-        <input id="name" type="text" placeholder="Name" required />
+        <input id="name" name ="info" type="text" placeholder="Name" required />
         <label for="email" id="email-label" class="label-input">Email</label>
 
-        <input id="email" type="email" placeholder="Email" required />
+        <input id="email" name ="info" type="email" placeholder="Email" required />
         <label for="number" id="number-label" class="label-input">Number</label>
         <input
           id="number"
@@ -29,10 +31,11 @@
           min="0"
           max="100"
           placeholder="Number"
+          name ="info"
           required
         />
 
-        <select name="continents" id="dropdown" required class="continents">
+        <select name="info" id="dropdown" required class="continents">
           <option value="">--Select your continent--</option>
           <option value="Africa">Africa</option>
           <option value="North America">North America</option>
@@ -45,22 +48,22 @@
 
         <p>Select your favourite code editor:</p>
         <div>
-          <input type="radio" id="emacs" name="fav_language" value="Emacs" />
+          <input type="radio" id="emacs" name="fav_language" value="Emacs" class="radio-buttons"/>
           <label for="html">Emacs</label>
         </div>
 
         <div>
-          <input type="radio" id="vim" name="fav_language" value="Vim" />
+          <input type="radio" id="vim" name="fav_language" value="Vim" class="radio-buttons"/>
           <label for="html">Vim</label>
         </div>
 
         <div>
-          <input type="radio" id="atom" name="fav_language" value="Atom" />
+          <input type="radio" id="atom" name="fav_language" value="Atom" class="radio-buttons"/>
           <label for="html">Atom</label>
         </div>
 
         <div>
-          <input type="radio" id="vscode" name="fav_language" value="VSCode" />
+          <input type="radio" id="vscode" name="fav_language" value="VSCode" class="radio-buttons"/>
           <label for="html">VSCode</label>
         </div>
         <div>
@@ -69,13 +72,13 @@
             id="sublime text"
             name="fav_language"
             value="sublime text"
-          />
+            class="radio-buttons"/>
           <label for="html">Sublime</label>
         </div>
         <!--Second Selection radio button-->
         <p>Select your favourite genere of music:</p>
         <div>
-          <input type="checkbox" id="rock" name="fav_language" value="Rock" />
+          <input type="checkbox" id="rock" name="fav_language" value="Rock" class="check_boxes"/>
           <label for="html">Rock</label>
         </div>
         <div>
@@ -84,6 +87,7 @@
             id="hip-hop"
             name="fav_language"
             value="hip-hop"
+            class="check_boxes"
           />
           <label for="html">Hip-Hop</label>
         </div>
@@ -93,6 +97,7 @@
             id="electronic"
             name="fav_language"
             value="electronic"
+            class="check_boxes"
           />
           <label for="html">Electronic</label>
         </div>
@@ -102,14 +107,15 @@
             id="classical"
             name="fav_language"
             value="classical"
+            class="check_boxes"
           />
           <label for="html">Classical</label>
         </div>
         <div>
-          <input type="checkbox" id="pop" name="fav_language" value="pop" />
+          <input type="checkbox" id="pop" value="pop" class="check_boxes"/>
           <label for="html">Pop</label>
         </div>
-        <textarea id="textarea" type="text" class="textarea" placeholder="Comments"></textarea>
+        <textarea id="textarea" type="text" name ="info" class="textarea" placeholder="Comments"></textarea>
 
         <input id="submit" type="submit" value="Submit" class="textarea"/>
       </form>
